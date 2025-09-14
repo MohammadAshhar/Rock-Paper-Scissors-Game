@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Rock Paper Scissors</h1>
+</header>
+<main>
+<section class="controls">
+<div class="mode">
+<label for="bestOf">Best of</label>
+<input id="bestOf" type="number" min="1" step="1" value="5" inputmode="numeric" />
+<span id="bestOfNote" aria-live="polite"></span>
+</div>
+<button id="resetBtn" class="btn">Reset</button>
+<div class="round-info">
+<p>Round <span id="round">0</span> / <span id="maxRounds">5</span></p>
+</div>
+</section>
+<section class="game-area">
+<div class="choices" role="list">
+<div class="choice" id="rock" data-choice="rock" role="listitem" tabindex="0">
+<img src="https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/rock.png" alt="rock" />
+</div>
+<div class="choice" id="paper" data-choice="paper" role="listitem" tabindex="0">
+<img src="https://husseinhewehii.github.io/Rock_Paper_Scissors/paper.png" alt="paper" />
+</div>
+<div class="choice" id="scissors" data-choice="scissors" role="listitem" tabindex="0">
+<img src="https://joa-d.github.io/Rock-Paper-Scissor-GSG/image/scissor.png" alt="scissors" />
+</div>
+</div>
+<div class="scorecard">
+<div class="score">
+<p id="user">0</p>
+<p>You</p>
+</div>
+<div class="score">
+<p id="comp">0</p>
+<p>Computer</p>
+</div>
+</div>
+<div class="message">
+<p id="mess">Play Your Move</p>
+</div>
+</section>
+<section class="history-area">
+<h2>History</h2>
+<ul id="history"></ul>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
